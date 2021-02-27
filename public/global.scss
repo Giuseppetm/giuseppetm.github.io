@@ -1,8 +1,9 @@
+
 // Main title font
 @font-face {
   font-family: 'ROCKETWILDNESS';
-  src: url('fonts/ROCKETWILDNESS.woff2') format('woff2'),
-      url('fonts/ROCKETWILDNESS.woff') format('woff');
+  src: url('../src/fonts/ROCKETWILDNESS.woff2') format('woff2'),
+  url('../src/fonts/ROCKETWILDNESS.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,8 +12,8 @@
 // Text font
 @font-face {
   font-family: 'Quicksand';
-  src: url('fonts/Quicksand-Light.woff2') format('woff2'),
-      url('fonts/Quicksand-Light.woff') format('woff');
+  src: url('../src/fonts/Quicksand-Light.woff2') format('woff2'),
+  url('../src/fonts/Quicksand-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -32,6 +33,21 @@ $secondary-dark: #1D1D1D; // Secondary background color
 $primary-text: #ebebeb; // Standard white for texts
 $footer-color: #333333; // Footer color
 
+// Universal
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+* {
+  color: $primary-text;
+  font-family: $font-family-text;
+}
 
 section { // Una sezione deve occupare l'intera grandezza della finestra di dimensioni attuali
   width: 100%;
@@ -48,6 +64,14 @@ footer {
   color: $primary-text;
 }
 
+.yellow {
+  color: $primary-yellow !important;
+}
+
+.white {
+  color: $primary-text !important;
+}
+
 
 /* Home adjustments */
 
@@ -56,17 +80,23 @@ footer {
 }
 
 .home-title {
-  color: $primary-yellow;
   font-family: $font-family-title !important;
   font-size: 5rem;
+  text-transform: uppercase;
 }
 
-.home .header a {
-  color: $primary-text !important;
+.home-title .letter {
+  display: inline-block;
 }
 
-.home .header i {
-  color: $primary-text !important;
+.home-description {
+  font-family: $font-family-text;
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+}
+
+.home-description .letter {
+  display: inline-block;
 }
 
 .home .header .navbar-brand {
@@ -78,48 +108,38 @@ footer {
   padding-right: 0rem !important;
 }
 
-
-/* End home adjustments */
-
-.about, .other {
-  background-color: $secondary-dark;
-}
-
-.home-description {
-  color: $primary-text;
-  font-family: $font-family-text;
-  font-size: 1.2rem;
-}
-
-.vertical-align {
+.home .vertical-align {
   height:65%;
   display: flex;
   justify-content: center;
   align-items: center; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-// universal
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
+.home .header a {
+  position: relative;
 }
 
-* {
-  font-family: $font-family-text;
+.home .header a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.home .header a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* End home adjustments */
+
+
+
+.about, .other {
+  background-color: $secondary-dark;
 }
