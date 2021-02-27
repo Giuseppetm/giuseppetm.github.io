@@ -1,0 +1,125 @@
+// Main title font
+@font-face {
+  font-family: 'ROCKETWILDNESS';
+  src: url('fonts/ROCKETWILDNESS.woff2') format('woff2'),
+      url('fonts/ROCKETWILDNESS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Text font
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-Light.woff2') format('woff2'),
+      url('fonts/Quicksand-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Fonts properties
+$font-family-title: 'ROCKETWILDNESS';
+$font-family-text: 'Quicksand';
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+
+// Colors properties
+$primary-blue: #083151; // Primary background color
+$primary-yellow: #FFE70E; // Primary text color
+$secondary-dark: #1D1D1D; // Secondary background color
+$primary-text: #ebebeb; // Standard white for texts
+$footer-color: #333333; // Footer color
+
+
+section { // Una sezione deve occupare l'intera grandezza della finestra di dimensioni attuali
+  width: 100%;
+  height: 100vh; // A quanto pare vh va bene per lo scopo
+  box-sizing: border-box; // Border-box e display block non sono sicuro che servano, ma forse servono poi
+  display: block;
+  text-align: center;
+  font-family: $font-family-text;
+}
+
+footer {
+  font-family: $font-family-text;
+  background-color: $footer-color;
+  color: $primary-text;
+}
+
+
+/* Home adjustments */
+
+.home, .projects {
+  background-color: $primary-blue;
+}
+
+.home-title {
+  color: $primary-yellow;
+  font-family: $font-family-title !important;
+  font-size: 5rem;
+}
+
+.home .header a {
+  color: $primary-text !important;
+}
+
+.home .header i {
+  color: $primary-text !important;
+}
+
+.home .header .navbar-brand {
+  font-family: $font-family-title;
+}
+
+.home .header .nav-item {
+  padding-left: 2rem !important;
+  padding-right: 0rem !important;
+}
+
+
+/* End home adjustments */
+
+.about, .other {
+  background-color: $secondary-dark;
+}
+
+.home-description {
+  color: $primary-text;
+  font-family: $font-family-text;
+  font-size: 1.2rem;
+}
+
+.vertical-align {
+  height:65%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// universal
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+* {
+  font-family: $font-family-text;
+}
