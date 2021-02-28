@@ -37,9 +37,25 @@ section {
 }
 
 footer {
-  font-family: "Quicksand";
   background-color: #333333;
-  color: #ebebeb;
+}
+
+/* Fix bootstrap outline when click */
+a:active,
+a:focus,
+button:active,
+button:focus {
+  outline: 0;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.home, .projects {
+  background-color: #083151;
+}
+
+.about, .other {
+  background-color: #1D1D1D;
 }
 
 .yellow {
@@ -51,28 +67,22 @@ footer {
 }
 
 /* Home adjustments */
-.home, .projects {
-  background-color: #083151;
-}
-
-.home-title {
+.home .home-title {
   font-family: "ROCKETWILDNESS" !important;
   font-size: 5rem;
   text-transform: uppercase;
 }
 
-.home-title .letter {
-  display: inline-block;
-}
-
-.home-description {
+.home .home-description {
   font-family: "Quicksand";
   font-size: 1.2rem;
   letter-spacing: 0.3em;
+  padding-bottom: 20px;
 }
 
-.home-description .letter {
-  display: inline-block;
+.home .home-description-underline {
+  border-bottom: 1px solid #b5b5b5;
+  padding-bottom: 5px;
 }
 
 .home .header .navbar-brand {
@@ -113,7 +123,95 @@ footer {
   left: 0;
 }
 
-/* End home adjustments */
-.about, .other {
-  background-color: #1D1D1D;
+.home .row {
+  justify-content: center;
 }
+
+@media only screen and (max-width: 500px) {
+  .home .home-title {
+    font-size: 15vw;
+  }
+
+  .home .home-description {
+    font-size: 4vw;
+  }
+
+  .home .header .navbar-brand {
+    font-size: 4.5vw;
+  }
+
+  .home .header .fa {
+    font-size: 4.5vw;
+  }
+}
+/* End home adjustments */
+/* Breakpoint definitions */
+@media only screen and (min-width: 1200px) {
+  .x-large-display {
+    display: block;
+  }
+
+  .large-display {
+    display: none;
+  }
+
+  .medium-display {
+    display: none;
+  }
+
+  .small-display {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .x-large-display {
+    display: none;
+  }
+
+  .large-display {
+    display: block;
+  }
+
+  .medium-display {
+    display: none;
+  }
+
+  .small-display {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .x-large-display {
+    display: none;
+  }
+
+  .large-display {
+    display: none;
+  }
+
+  .medium-display {
+    display: block;
+  }
+
+  .small-display {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .x-large-display {
+    display: none;
+  }
+
+  .large-display {
+    display: none;
+  }
+
+  .medium-display {
+    display: none;
+  }
+
+  .small-display {
+    display: block;
+  }
+}
+/* End breakpoint definitions */

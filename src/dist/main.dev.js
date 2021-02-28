@@ -3,12 +3,10 @@
 /*
     Home animations
 */
-var textWrapper = document.querySelector('.home-title');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter home-title yellow'>$&</span>");
 anime.timeline({
   loop: false
 }).add({
-  targets: '.home-title .letter',
+  targets: '.home-title',
   translateX: [40, 0],
   translateZ: 0,
   opacity: [0, 1],
@@ -17,14 +15,11 @@ anime.timeline({
   delay: function delay(el, i) {
     return 500 + 30 * i;
   }
-}); // Wrap every letter in a span
-
-var textWrapper2 = document.querySelector('.home-description');
-textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter home-description'>$&</span>");
+});
 anime.timeline({
   loop: false
 }).add({
-  targets: '.home-description .letter',
+  targets: '.home-description',
   translateY: [100, 0],
   translateZ: 0,
   opacity: [0, 1],
