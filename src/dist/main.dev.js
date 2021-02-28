@@ -1,8 +1,6 @@
 "use strict";
 
-/*
-    Home animations
-*/
+/* Home animations */
 anime.timeline({
   loop: false
 }).add({
@@ -28,4 +26,13 @@ anime.timeline({
   delay: function delay(el, i) {
     return 300 + 30 * i;
   }
+});
+/* Click to scroll to section */
+
+$('.click_to_scroll').click(function () {
+  var clickedId = $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(clickedId).offset().top
+  }, 1000);
+  return false;
 });

@@ -1,7 +1,4 @@
-/*
-    Home animations
-*/
-
+/* Home animations */
 anime.timeline({loop: false})
 .add({
     targets: '.home-title',
@@ -22,4 +19,11 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     duration: 1000,
     delay: (el, i) => 300 + 30 * i
+});
+
+/* Click to scroll to section */
+$('.click_to_scroll').click(function(){
+    var clickedId = $(this).attr('href');
+    $('html, body').animate({ scrollTop: ($(clickedId).offset().top)} , 1000);
+    return false;
 });
