@@ -66,6 +66,12 @@ button:focus {
   color: #ebebeb !important;
 }
 
+.arrow-next-page {
+  color: #ebebeb;
+  font-size: 35px;
+  margin-top: 30px;
+}
+
 /* Home adjustments */
 .home .home-title {
   font-family: "ROCKETWILDNESS" !important;
