@@ -37,6 +37,7 @@ $footer-color: #333333; // Footer color
 // Main properties
 html,
 body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
@@ -123,6 +124,7 @@ button:focus {
 
 .home .home-description-underline {
   font-family: $font-family-text;
+  color: $primary-text !important;
   font-size: 1.2rem;
   letter-spacing: 0.3em;
   border-bottom: 1px solid $border-color;

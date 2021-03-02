@@ -34,19 +34,19 @@ const Home = () => {
             <p className="home-description">21 YEARS OLD | STUDENT | FRONT END DEVELOPER</p>
           </div>
           <div className="home-description-container large-display">
-            <p className="home-description-underline">21 YEARS OLD</p>
-            <p className="home-description-underline">STUDENT</p>
-            <p className="home-description-underline">FRONT END DEVELOPER</p>
+            <div className="mb-3"><a className="home-description-underline">21 YEARS OLD</a></div>
+            <div className="mb-3"><a className="home-description-underline">STUDENT</a></div>
+            <div className="mb-3"><a className="home-description-underline">FRONT END DEVELOPER</a></div>
           </div>
           <div className="home-description-container medium-display">
-            <p className="home-description-underline">21 YEARS OLD</p>
-            <p className="home-description-underline">STUDENT</p>
-            <p className="home-description-underline">FRONT END DEVELOPER</p>
+            <div className="mb-3"><a className="home-description-underline">21 YEARS OLD</a></div>
+            <div className="mb-3"><a className="home-description-underline">STUDENT</a></div>
+            <div className="mb-3"><a className="home-description-underline">FRONT END DEVELOPER</a></div>
           </div>
           <div className="home-description-container small-display">
-            <p className="home-description-underline">21 YEARS OLD</p>
-            <p className="home-description-underline">STUDENT</p>
-            <p className="home-description-underline">FRONT END DEVELOPER</p>
+            <div className="mb-3"><a className="home-description-underline">21 YEARS OLD</a></div>
+            <div className="mb-3"><a className="home-description-underline">STUDENT</a></div>
+            <div className="mb-3"><a className="home-description-underline">FRONT END DEVELOPER</a></div>
           </div>
         </div>
       </div>
