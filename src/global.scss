@@ -1,0 +1,232 @@
+
+// Main title font
+@font-face {
+  font-family: 'ROCKETWILDNESS';
+  src: url('../src/fonts/ROCKETWILDNESS.woff2') format('woff2'),
+  url('../src/fonts/ROCKETWILDNESS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Text font
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../src/fonts/Quicksand-Light.woff2') format('woff2'),
+  url('../src/fonts/Quicksand-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Fonts properties
+$font-family-title: 'ROCKETWILDNESS';
+$font-family-text: 'Quicksand';
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+
+// Colors properties
+$primary-blue: #083151; // Primary background color
+$primary-yellow: #FFE70E; // Primary text color
+$secondary-dark: #1D1D1D; // Secondary background color
+$primary-text: #ebebeb; // Standard white for texts
+$border-color: rgb(181, 181, 181); // Border color
+$footer-color: #333333; // Footer color
+
+// Main properties
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+* {
+  color: $primary-text;
+  font-family: $font-family-text;
+}
+
+section { // Una sezione deve occupare l'intera grandezza della finestra di dimensioni attuali
+  width: 100%;
+  height: 100vh; // A quanto pare vh va bene per lo scopo
+  box-sizing: border-box; // Border-box e display block non sono sicuro che servano, ma forse servono poi
+  display: block;
+  text-align: center;
+  font-family: $font-family-text;
+}
+
+footer {
+  background-color: $footer-color;
+}
+
+/* Fix bootstrap outline when click */
+a:active,
+a:focus,
+button:active,
+button:focus {
+  outline: 0;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.home, .projects {
+  background-color: $primary-blue;
+}
+
+.about, .other {
+  background-color: $secondary-dark;
+}
+
+.yellow {
+  color: $primary-yellow !important;
+}
+
+.white {
+  color: $primary-text !important;
+}
+
+/* Next section arrow icon */
+.arrow-next-page {
+  transform: scale(1.3,1);
+  color: $primary-text;
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .arrow-next-page {
+    font-size: 6vw;
+  }
+}
+
+
+
+/* Home adjustments */
+
+.home .home-title {
+  font-family: $font-family-title !important;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.home .home-description {
+  font-family: $font-family-text;
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  padding-bottom: 20px;
+}
+
+.home .home-description-underline {
+  font-family: $font-family-text;
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 5px;
+}
+
+.home .header .navbar-brand {
+  font-family: $font-family-title;
+}
+
+.home .header .nav-item {
+  padding-left: 2rem !important;
+  padding-right: 0rem !important;
+}
+
+.home .vertical-align {
+  height:65%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.home .header a {
+  position: relative;
+}
+
+.home .header a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.home .header a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.home .row {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) { // Responsive home section
+  .home .home-title {
+    font-size: 15vw;
+  }
+
+  .home .home-description {
+    font-size: 4vw;
+  }
+
+  .home .header .navbar-brand, .home .header .fa, .home .header .nav-item {
+    font-size: 4.5vw;
+  }
+}
+
+/* End home adjustments */
+
+
+/* Breakpoint definitions */
+@media only screen and (min-width: 1200px) {
+  .x-large-display {
+    display:block;
+  }
+
+  .large-display, .medium-display, .small-display {
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .large-display {
+    display:block;
+  }
+
+  .x-large-display, .medium-display, .small-display {
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .medium-display {
+    display:block;
+  }
+
+  .x-large-display, .large-display, .small-display  {
+    display:none;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .small-display {
+    display:block;
+  }
+
+  .x-large-display, .medium-display, .large-display {
+    display:none;
+  }
+}
+/* End breakpoint definitions */
