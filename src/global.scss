@@ -147,11 +147,34 @@ button:focus {
   align-items: center; 
 }
 
-.home .header a {
+.home .row {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) { // Responsive home section
+  .home .home-title {
+    font-size: 15vw;
+  }
+
+  .home .home-description-underline {
+    font-size: 4vw !important;
+  }
+
+  .home .header .navbar-brand, .home .header .navbar-toggler, .home .header .nav-link {
+    font-size: 4.5vw;
+  }
+}
+
+/* End home adjustments */
+
+
+
+/* Navbar adjustments */
+.home .header .nav-link {
   position: relative;
 }
 
-.home .header a:after {    
+.home .header .nav-link:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -164,30 +187,58 @@ button:focus {
   width: 0;
 }
 
-.home .header a:hover:after { 
+.home .header .nav-link:hover:after { 
   width: 100%; 
   left: 0; 
 }
 
-.home .row {
-  justify-content: center;
+.nav-list {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #222;
+  padding: 4.4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 10;
+  text-transform: uppercase;
+  transform: translateX(-100%);
+  transition: transform .5s
 }
 
-@media only screen and (max-width: 500px) { // Responsive home section
-  .home .home-title {
-    font-size: 15vw;
-  }
-
-  .home .home-description {
-    font-size: 4vw;
-  }
-
-  .home .header .navbar-brand, .home .header .fa, .home .header .nav-item {
-    font-size: 4.5vw;
-  }
+.active {
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
 }
 
-/* End home adjustments */
+.open .nav-list {
+  transform: translateX(0)
+}
+
+@media screen and (min-width:992px) {
+  .nav-list {
+      position: initial;
+      width: initial;
+      height: initial;
+      background-color: transparent;
+      padding: 0;
+      justify-content: initial;
+      flex-direction: row;
+      transform: initial;
+      transition: initial
+  }
+
+  .menu-toggle {
+      display: none
+  }
+}
+/* End navbar adjustments */
+
+
 
 
 /* Breakpoint definitions */

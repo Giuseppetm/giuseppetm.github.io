@@ -1,37 +1,52 @@
 import React from 'react';
 
+window.onload = () => {
+    const navbar = document.querySelector(".navbar");
+    const menuToggle = document.querySelector(".menu-toggle");
+    
+    menuToggle!.addEventListener("click", () => {
+      navbar!.classList.toggle("open");
+    });
+};
+
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-offcanvas pt-5 pb-5 ml-2 mr-2">
+        <header className="header">
             <div className="container">
-
-                {/* Navbar-brand */}
-                <a href="#home" className="navbar-brand text-uppercase white">GIUSEPPE DEL CAMPO</a>
-
-                {/* Navbar toggler */}
-                <button type="button" className="navbar-toggler d-block" id="navToggle">
-                <span className="navbar-toggler-icon"><i className="fa fa-bars"></i></span>
-                </button>
-
-                {/* Navbar collapse */}
-                <div className="navbar-collapse offcanvas-collapse">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
-                            <a href="#home" className="nav-link text-uppercase white">HOME<span className="sr-only">(current)</span></a>
+                <nav className="navbar pt-5 pb-5 ml-2 mr-2">
+                    <h1 className="navbar-brand">
+                        GIUSEPPE DEL CAMPO
+                    </h1>
+                    <ul className="nav-list">
+                        <li className="nav-item">
+                            <a className="nav-link text-uppercase white active" href="#home">
+                                HOME
+                            </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#about" className="nav-link text-uppercase white">ABOUT ME</a>
+                            <a className="nav-link text-uppercase white" href="#about">
+                                ABOUT
+                            </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#projects" className="nav-link text-uppercase white">PROJECTS</a>
+                            <a className="nav-link text-uppercase white" href="#projects">
+                                PROJECTS
+                            </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#other" className="nav-link text-uppercase white">OTHER</a>
+                            <a className="nav-link text-uppercase white" href="#other">
+                                OTHER
+                            </a>
                         </li>
                     </ul>
-                </div>
+                    <div className="menu-toggle">
+                        <button type="button" className="navbar-toggler" id="navToggle">
+                            <i className="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </header>
     );
 }
 
