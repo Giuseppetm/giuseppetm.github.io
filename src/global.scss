@@ -45,15 +45,18 @@ body {
   padding: 0;
   left: 0;
   top: 0;
+  z-index: 0;
 }
 
 * {
   color: $primary-text;
   font-family: $font-family-text;
+  z-index: 2;
 }
 
 canvas {
   position: absolute;
+  z-index: 1 !important;
 }
 
 section { // Una sezione deve occupare l'intera grandezza della finestra di dimensioni attuali

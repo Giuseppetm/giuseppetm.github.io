@@ -4,11 +4,12 @@ import About from './About';
 import Projects from './Projects';
 import Other from './Other';
 import Footer from './Footer';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ParticleComponent from "./ParticleComponent";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <div
         style={{
           position: "absolute",
@@ -16,28 +17,28 @@ const App = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          zIndex: 50
+          zIndex: 1
         }}
       >
         <ParticleComponent />
       </div>
       <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: 0
-          }}
-        >
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: 0
+        }}
+      >
       <Home />
       <About />
       <Projects />
       <Other />
       <Footer />
       </div>
-    </div>
+    </Router>
   );
 }
 
