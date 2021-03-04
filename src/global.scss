@@ -45,18 +45,17 @@ body {
   padding: 0;
   left: 0;
   top: 0;
-  z-index: 0;
 }
 
 * {
   color: $primary-text;
   font-family: $font-family-text;
-  z-index: 2;
+  z-index: 3;
 }
 
 canvas {
-  position: absolute;
-  z-index: 1 !important;
+  position: fixed;
+  z-index: 2 !important;
 }
 
 section { // Una sezione deve occupare l'intera grandezza della finestra di dimensioni attuali
@@ -66,6 +65,7 @@ section { // Una sezione deve occupare l'intera grandezza della finestra di dime
   display: block;
   text-align: center;
   font-family: $font-family-text;
+  z-index: 1 !important;
 }
 
 footer {

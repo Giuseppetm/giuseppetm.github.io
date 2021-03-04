@@ -10,34 +10,22 @@ import ParticleComponent from "./ParticleComponent";
 const App = () => {
   return (
     <Router>
+      <ParticleComponent />
       <div
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
-          height: "100%",
-          zIndex: 1
+          height: "100%"
         }}
       >
-        <ParticleComponent />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: 0
-        }}
-      >
-      <Home />
-      <About />
-      <Projects />
-      <Other />
-      <Footer />
-      </div>
+        <Home />
+        <About />
+        <Projects />
+        <Other />
+        <Footer />
+        </div>
     </Router>
   );
 }

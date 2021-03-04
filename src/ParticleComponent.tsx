@@ -2,6 +2,16 @@ import React from "react";
 import Particles from "react-particles-js";
 
 const ParticleComponent = () => (
+  <div
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 2
+  }}
+>
     <Particles
       params={{
         "particles": {
@@ -114,6 +124,7 @@ const ParticleComponent = () => (
         "retina_detect": true
       }}
     />
+  </div>
 );
 
 export default ParticleComponent;
