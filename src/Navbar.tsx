@@ -14,7 +14,7 @@ const Navbar = () => {
         <header className="header">
             <div className="container">
                 <nav className="navbar pt-5 pb-5 ml-2 mr-2">
-                    <h1 className="navbar-brand">
+                    <h1 className="navbar-brand text-uppercase white">
                         GIUSEPPE DEL CAMPO
                     </h1>
                     <ul className="nav-list">
