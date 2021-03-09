@@ -1,8 +1,8 @@
 # Site settings
 title: Giuseppe Del Campo
 description: Personal website of Giuseppe Del Campo (21 Years Old, Student, Front end Developer)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://giuseppetm.github.io/new-personal-website/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "giuseppetm.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "/new-personal-website" # the subpath of your site, e.g. /blog
 
 # User settings
 username: Giuseppe Del Campo
