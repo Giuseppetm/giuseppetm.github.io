@@ -1,12 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+// Main colors mported from other project
+$primary-blue: #083151; // Primary background color
+$primary-yellow: #FFE70E; // Primary text color
+$secondary-dark: #1D1D1D; // Secondary background color
+$primary-text: #ebebeb; // Standard white for texts
+$border-color: rgb(181, 181, 181); // Border color
+$footer-color: #333333; // Footer color
+
+
+// Main title font
+@font-face {
+    font-family: 'ROCKETWILDNESS';
+    src: url('../fonts/ROCKETWILDNESS.woff2') format('woff2'),
+    url('../fonts/ROCKETWILDNESS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Text font
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.woff2') format('woff2'),
+    url('../fonts/Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
-    font-family: 'Montserrat', sans-serif;
+    color: $primary-blue; // Text color of paragraphs
+    font-family: 'Quicksand';
 }
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
