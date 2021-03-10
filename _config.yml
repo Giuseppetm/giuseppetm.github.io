@@ -2,7 +2,7 @@
 title: Giuseppe Del Campo
 description: Personal website of Giuseppe Del Campo (21 Years Old, Student, Front end Developer)
 url: "giuseppetm.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-baseurl: "/new-personal-website" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # User settings
 username: Giuseppe Del Campo
@@ -16,7 +16,7 @@ user_title: Front End Developer
 email: gdeambo@yahoo.it
 
 # Google-analytics
-google-analytics:
-  id: ""
+# google-analytics:
+# id: ""
 
 exclude: ['package.json', 'src' , 'node_modules']
