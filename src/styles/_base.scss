@@ -1,8 +1,8 @@
 // Main colors mported from other project
-$primary-blue: #083151; // Primary background color
-$primary-yellow: #FFE70E; // Primary text color
+$background-color: #f5f5f5; // Primary background color
+$primary-red: #d12e2e; // Primary text color
 $secondary-dark: #1D1D1D; // Secondary background color
-$primary-text: #ebebeb; // Standard white for texts
+$primary-text: #333; // Standard white for texts
 $border-color: rgb(181, 181, 181); // Border color
 $footer-color: #333333; // Footer color
 
@@ -32,7 +32,7 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: $primary-blue; // Text color of paragraphs
+    color: $primary-text;
     font-family: 'Quicksand';
 }
 article, aside, figcaption, figure, footer, header, nav, section {

@@ -1,5 +1,5 @@
 #particles-js {
-  background: $primary-blue;
+  background: #f5f5f5;
   display: flex;
   vertical-align: bottom;
   width: 100%;
@@ -16,7 +16,7 @@
 .header {
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color:$primary-text;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,7 +30,7 @@
     font-weight: normal;
     display: block;
     line-height: 1;
-    color: $primary-yellow;
+    color: $primary-red;
     @media only screen and (min-width:$cut){
       margin: 0;
       font-size: 80px;
@@ -71,22 +71,22 @@
   text-align: center;
   .icon {
     text-align: center;
-    color: #FFF;
+    color: rgb(72, 71, 71);
     width: 15px;
     height: 15px;
     font-size: 15px;
     padding: 10px;
     margin: 5px;
     border-radius: 50%;
-    border: 2px solid #FFF;
+    border: 2px solid $primary-text;
     transition: all .3s;
     &:hover {
-      color: $main;
-      background: #FFF;
+      color: $primary-red;
+      background: rgb(89, 88, 88);
     }
     &:active {
-      color: $main;
-      background: #FFF;
+      color: $primary-red;
+      background: rgb(89, 88, 88);
     }
     @media only screen and (min-width:$cut) {
       width: 25px;
@@ -97,7 +97,7 @@
 }
 
 .down {
-  color: #FFF;
+  color: $primary-text;
   position: absolute;
   bottom: 25px;
   width: 100%;
@@ -107,23 +107,23 @@
   font-size: 30px;
   cursor: pointer;
   .icon {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      fill: #fff;
-      -webkit-animation: pulse 1.3s infinite;
-      animation: pulse 1.3s infinite;
-      &:hover {
-        color: $sec;
-      }
-      &:active {
-        color: $sec;
-      }
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: $primary-text;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+    &:hover {
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
   }
 }

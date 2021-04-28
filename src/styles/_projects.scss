@@ -92,7 +92,7 @@
     border-color 0.2s ease-out;
 
   &:hover {
-    background-color: $primary-blue;
+    background-color: rgb(89, 88, 88);
     border-color: $secondary-dark;
     color: #fff;
     transition: color 0.2s ease-in,
@@ -101,7 +101,7 @@
   }
 
   &:active {
-    background-color: $primary-blue;
+    background-color: rgb(89, 88, 88);
     border-color: $secondary-dark;
     color: #fff;
     transition: color 0.2s ease-in,
@@ -131,7 +131,7 @@
 .repository {
   margin-right: .3rem; 
   margin-left: .1rem;
-  color:blueviolet
+  color:#dc5e5e
 }
 
 .website {
