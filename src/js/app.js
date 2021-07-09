@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "line_linked": {
         "enable": true,
         "distance": 64.13648243462092,
-        "color": "#db6767",
+        "color": "#d13b3b",
         "opacity": 0.2805971106514665,
         "width": 1.4430708547789706
       },

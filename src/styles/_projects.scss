@@ -11,6 +11,16 @@
   }
 }
 
+a {
+  color: rgb(4, 129, 224);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(2, 94, 165);
+  text-decoration: underline;
+}
+
 .user-projects {
   margin: 20px auto;
 
