@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "color": {
-        "value": "#d12e2e"
+        "value": "#f3b196"
       },
       "shape": {
         "type": "edge",
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 30,
+          "speed": 35,
           "size_min": 0.1,
           "sync": false
         }
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "line_linked": {
         "enable": true,
         "distance": 64.13648243462092,
-        "color": "#d13b3b",
+        "color": "#4297A0",
         "opacity": 0.2805971106514665,
         "width": 1.4430708547789706
       },

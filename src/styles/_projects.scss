@@ -11,13 +11,13 @@
   }
 }
 
-a {
-  color: rgb(4, 129, 224);
+.link {
+  color: $primary-color;
   text-decoration: none;
 }
 
-a:hover {
-  color: rgb(2, 94, 165);
+.link:hover {
+  color: $primary-color;
   text-decoration: underline;
 }
 
@@ -86,13 +86,14 @@ a:hover {
 }
 
 .project-link {
+  color: $primary-text;
   display: inline-block;
   margin: 10px 0px;
   padding: 5px;
-  color: $main;
   background-color: transparent;
   border: 1px solid $main;
-  border-radius: 2px;
+  border-color: $border-color;
+  border-radius: 3px;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -102,52 +103,44 @@ a:hover {
     border-color 0.2s ease-out;
 
   &:hover {
-    background-color: rgb(89, 88, 88);
-    border-color: $secondary-dark;
+    background-color: $primary-color;
     color: #fff;
     transition: color 0.2s ease-in,
       background-color 0.2s ease-in,
       border-color 0.2s ease-in;
+    i {
+      color: #fff;
+      transition: color 0.2s ease-in,
+      background-color 0.2s ease-in,
+      border-color 0.2s ease-in;
+    }
   }
 
   &:active {
-    background-color: rgb(89, 88, 88);
-    border-color: $secondary-dark;
+    background-color: $primary-color;
     color: #fff;
     transition: color 0.2s ease-in,
       background-color 0.2s ease-in,
       border-color 0.2s ease-in;
+    i {
+      color: #fff;
+      transition: color 0.2s ease-in,
+        background-color 0.2s ease-in,
+        border-color 0.2s ease-in;
+    }
   }
-}
-
-.project-link-disabled {
-  display: inline-block;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
-  background-color: transparent;
-  border: 1px solid $main;
-  border-radius: 2px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  cursor:auto;
-  background-color: #d1d1d1;
-  color: #949494;
-  border-color: #7a7a7a;
-  opacity: 0.75; 
 }
 
 .repository {
   margin-right: .3rem; 
   margin-left: .1rem;
-  color:#dc5e5e
+  color:$primary-color;
 }
 
 .website {
   margin-right: .3rem; 
   margin-left: .1rem;
-  color:rgb(4, 129, 224);
+  color:$secondary-color;
 }
 
 .project-devicon {

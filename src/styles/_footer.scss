@@ -1,14 +1,14 @@
 .footer {
-  background: rgb(89, 88, 88);
+  background: $secondary-color;
   padding: 10px 0;
   margin-top: 100px;
   text-align: center;
-  color: #FFF;
+  color: $primary-text;
 
   a {
     text-decoration: none;
     margin: 0;
-    color: #FFF;
+    color: $primary-text;
     &:hover{
       color: $sec;
     }
