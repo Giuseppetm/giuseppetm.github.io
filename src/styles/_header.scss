@@ -16,7 +16,7 @@
 .header {
   z-index: 1;
   text-align: center;
-  color:$primary-text;
+  color:$text-color-header;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,10 +41,10 @@
   }
   .site-description {
     font-size: 11px;
-    display: block;
+    //display: block;
     line-height: 1;
     text-transform: uppercase;
-    color: $primary-text;
+    color: $text-color-header;
     //margin-top: 10px;
     @media only screen and (min-width:$cut){
       font-size: 20px;
@@ -52,10 +52,14 @@
   }
 }
 
+.typed-cursor {
+  color: $text-color-header;
+}
+
 .header-links {
   margin: 10px;
   .link {
-    color: $primary-text;
+    color: $text-color-header;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
@@ -71,14 +75,14 @@
   text-align: center;
   .icon {
     text-align: center;
-    color: $primary-text;
+    color: $text-color-header;
     width: 15px;
     height: 15px;
     font-size: 15px;
     padding: 10px;
     margin: 5px;
     border-radius: 50%;
-    border: 2px solid $primary-text;
+    border: 2px solid $text-color-header;
     transition: all .3s;
     &:hover, &:active {
       color: $secondary-color;
@@ -93,7 +97,7 @@
 }
 
 .down {
-  color: $primary-text;
+  color: $text-color-header;
   position: absolute;
   bottom: 25px;
   width: 100%;
@@ -112,7 +116,7 @@
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    fill: $primary-text;
+    fill: $text-color-header;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite;
     &:hover {
